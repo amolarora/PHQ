@@ -14,14 +14,17 @@ body{
     text-align: center;
     
 }
-.wrapper{
-    width: 90%;
-    margin: 0 auto;
-}
+
+// Nav Bar styles
 header{
     width: 100%;
     height: 80px;
     background: #000000;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
 }
 
 .logo{
@@ -29,17 +32,9 @@ header{
     float: left;
     text-align: left;
     line-height: 80px;
-}
-.logo a{
-    text-decoration: none;
-    font-size: 30px;
-    color:#fff;
-    font-weight: 800;
-    vertical-align: middle;
-}
-
-.logo img{
-    vertical-align: middle;
+    img{
+        vertical-align: middle;
+    }
 }
 
 nav{
@@ -55,12 +50,12 @@ nav{
     padding: 20px 10px;
     margin: 0 1px;
     font-weight: 100;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
-nav a:hover{
-    text-decoration: underline;
-}
-
+// Home page page styles
 .homeContent{
     position: absolute;
     width: 100vw;
@@ -68,23 +63,22 @@ nav a:hover{
     background-color: black;
 }
 
-.homeTitle{
-    transform: translate(0%, 220px);
-    color: #fff;
-    font-family: 'Chakra Petch';
-}
-
 .formContainer{
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -70%);
     width: 500px;
-    height: 100px;
+    height: 125px;
     border-style: solid;
     border-width: 1px;
     border-color: black;
+}
+
+.homeTitle{
+    color: #fff;
+    font-family: 'Chakra Petch';
 }
 
 .linkInput{
@@ -126,6 +120,11 @@ nav a:hover{
     font-weight: 800;
 }
 
+#linksList {
+    color: #fff;
+}
+
+// Results page styles
 .resultsPageContent{
     position: absolute;
     width: 100vw;
@@ -156,10 +155,9 @@ nav a:hover{
     color: #fff;
     font-family: 'Orbitron';
     text-decoration: none;
-}
-
-.resultURL:hover{
-    text-decoration: underline;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 .backButton {
@@ -172,12 +170,7 @@ nav a:hover{
     color: white;
     cursor: pointer;
     transform: translate(0%, 350px);
-}
-
-.backButton:hover{
-    background-color: #3d3d3d;
-}
-
-#demo {
-    color: #fff;
+    &:hover{
+        background-color: #3d3d3d;
+    }
 }
